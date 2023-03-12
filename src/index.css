@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark theme (default) */
+  --bg-dark: #0b1411;
+  --box-bg: #13201b;
+  --bg-light: #1d2e27;
+
+  --text: #e9f5f0;
+  --text-muted: #a6c3b9;
+
+  --border: #4f7c6d;
+  --border-muted: #3a6155;
+
+  --primary: #7ed6b8;
+  --secondary: #d88bc0;
+}
+
+html.light {
+  /* Light theme */
+  --bg-dark: #e6f2ec;
+  --box-bg: #f0faf6;
+  --bg-light: #ffffff;
+
+  --text: #12241d;
+  --text-muted: #5f8074;
+
+  --border: #8fb6a8;
+  --border-muted: #a8cbbb;
+
+  --primary: #2f7f67;
+  --secondary: #8a3f6f;
+}
