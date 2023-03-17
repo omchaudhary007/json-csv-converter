@@ -3,6 +3,7 @@ import { csvToJson, jsonToCsv } from "./utils/converters";
 import { Header } from "./components/Header";
 import { InputSection } from "./components/InputSection";
 import { OutputSection } from "./components/OutputSection";
+import { ErrorMessage } from "./components/ErrorMessage";
 
 type ConversionMode = "csv-to-json" | "json-to-csv";
 
@@ -97,6 +98,7 @@ const App: React.FC = () => {
             onDownload={handleDownload}
           />
         </div>
+        <ErrorMessage message={error} />
       </main>
     </div>
   );
