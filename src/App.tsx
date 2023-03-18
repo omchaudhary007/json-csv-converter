@@ -4,6 +4,9 @@ import { Header } from "./components/Header";
 import { InputSection } from "./components/InputSection";
 import { OutputSection } from "./components/OutputSection";
 import { ErrorMessage } from "./components/ErrorMessage";
+import { InfoSection } from "./components/InfoSection";
+import { Footer } from "./components/Footer";
+
 
 type ConversionMode = "csv-to-json" | "json-to-csv";
 
@@ -99,7 +102,9 @@ const App: React.FC = () => {
           />
         </div>
         <ErrorMessage message={error} />
+        <InfoSection />
       </main>
+      <Footer />
     </div>
   );
 };
